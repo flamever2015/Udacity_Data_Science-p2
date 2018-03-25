@@ -26,7 +26,8 @@ WeRateDogs 推特档案中包括需要分析的5000多条基本信息。根据Tw
 
 ## 整洁度
 使分析难以进行的结构性问题都是整洁维度需要关注。
-tweet_json和image_predictions中的部分column应当和WeRateDogs 推特档案中的基本信息合并到一个DataFrame中，这样方便数据分析，简化文件间查询的繁琐。
+- tweet_json和image_predictions中的部分column应当和WeRateDogs 推特档案中的基本信息合并到一个DataFrame中，这样方便数据分析，简化文件间查询的繁琐。
+- 狗的地位共有四种，原dataframe中分为了四列。应当合并为一列。
 
 ## 质量
 质量问题主要体现在数据类型，部分数据明显错误应当剔除，部分转发推文数据行应当剔除。
